@@ -7,43 +7,39 @@
   <meta name="description" content="Ordena tus finanzas personales desde WhatsApp. Registra gastos, categoriza automáticamente con IA y recibe reportes mensuales.">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+  <link rel="icon" type="image/png" href="/logoweb.png">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: {
-            // Paleta General del Sitio (Dark Tech)
-            main: '#0B0F15',
-            sec: '#11141E',
-            card: '#1A1D2D',
-            border: '#2E3245',
-            accent: '#4F46E5',
+  <!-- Tailwind CSS v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-            // Colores NATIVOS de WhatsApp Dark Mode para el mockup
-            waBg: '#0d1418',
-            waHeader: '#202c33',
-            waUser: '#005c4b',
-            waBot: '#202c33',
-            waText: '#e9edef',
-            waGray: '#8696a0',
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Google Fonts -->
+  <!-- Google Fonts - Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: 'Poppins', sans-serif;
+
+      /* Paleta General del Sitio (Dark Tech) */
+      --color-main: #0B0F15;
+      --color-sec: #11141E;
+      --color-card: #1A1D2D;
+      --color-border: #2E3245;
+      --color-accent: #4F46E5;
+
+      /* Colores NATIVOS de WhatsApp Dark Mode para el mockup */
+      --color-waBg: #0d1418;
+      --color-waHeader: #202c33;
+      --color-waUser: #005c4b;
+      --color-waBot: #202c33;
+      --color-waText: #e9edef;
+      --color-waGray: #8696a0;
+    }
+  </style>
 
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'Poppins', sans-serif; }
 
     /* Animación suave para el celular */
     @keyframes float {
@@ -78,7 +74,7 @@
   <nav class="fixed w-full bg-sec/95 backdrop-blur-sm z-50 border-b border-border">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
-        <span class="text-2xl">💰</span>
+        <img src="/logoweb.png" alt="Ordénate.AI" class="w-8 h-8">
         <span class="text-xl font-bold text-white">Ordénate<span class="text-accent">.AI</span></span>
       </div>
       <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
@@ -129,7 +125,7 @@
           <div class="bg-waBg rounded-[2.5rem] overflow-hidden">
             <!-- WhatsApp Header -->
             <div class="bg-waHeader px-4 py-3 flex items-center gap-3">
-              <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-xl">💰</div>
+              <img src="/logoweb.png" alt="Ordénate.AI" class="w-10 h-10 rounded-full">
               <div>
                 <p class="text-waText font-semibold text-sm">Ordénate.AI</p>
                 <p class="text-waGray text-xs">en línea</p>
@@ -137,20 +133,24 @@
             </div>
             <!-- Chat -->
             <div class="p-3 space-y-2 min-h-[350px]">
-              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[80%] shadow-sm">
+              <!-- Usuario escribe (derecha, verde) -->
+              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[80%] ml-auto shadow-sm">
                 <p class="text-sm text-waText">Gasté 15000 en almuerzo</p>
                 <p class="text-[10px] text-waGray text-right">10:30</p>
               </div>
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[80%] ml-auto shadow-sm">
+              <!-- Bot responde (izquierda, gris) -->
+              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[80%] shadow-sm">
                 <p class="text-sm text-waText">✅ Registrado: Almuerzo $15.000</p>
                 <p class="text-sm text-waText">🏷️ Categoría: Alimentación</p>
                 <p class="text-[10px] text-waGray text-right">10:30</p>
               </div>
-              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[80%] shadow-sm">
+              <!-- Usuario escribe (derecha, verde) -->
+              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[80%] ml-auto shadow-sm">
                 <p class="text-sm text-waText">¿Cuánto llevo este mes?</p>
                 <p class="text-[10px] text-waGray text-right">10:31</p>
               </div>
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[85%] ml-auto shadow-sm">
+              <!-- Bot responde (izquierda, gris) -->
+              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[85%] shadow-sm">
                 <p class="text-sm text-waText">📊 Gastos de Enero:</p>
                 <p class="text-sm text-waText">• Alimentación: $185.000</p>
                 <p class="text-sm text-waText">• Transporte: $45.000</p>
@@ -168,10 +168,10 @@
   <section class="py-10 bg-sec border-y border-border">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <p class="text-gray-500 text-sm mb-4">Tecnología de confianza</p>
-      <div class="flex justify-center items-center gap-8 md:gap-16 opacity-60">
-        <span class="text-2xl font-bold text-gray-500">WhatsApp</span>
-        <span class="text-2xl font-bold text-gray-500">Claude AI</span>
-        <span class="text-2xl font-bold text-gray-500">PostgreSQL</span>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 opacity-60">
+        <span class="text-xl md:text-2xl font-bold text-gray-500">WhatsApp</span>
+        <span class="text-xl md:text-2xl font-bold text-gray-500">Anthropic</span>
+        <span class="text-xl md:text-2xl font-bold text-gray-500">PostgreSQL</span>
       </div>
     </div>
   </section>
@@ -188,7 +188,7 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Paso 1 -->
-        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-transparent hover:border-border">
+        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">💬</span>
           </div>
@@ -200,7 +200,7 @@
         </div>
 
         <!-- Paso 2 -->
-        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-transparent hover:border-border">
+        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">🤖</span>
           </div>
@@ -212,7 +212,7 @@
         </div>
 
         <!-- Paso 3 -->
-        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-transparent hover:border-border">
+        <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">📊</span>
           </div>
@@ -450,7 +450,7 @@
       <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div class="md:col-span-2">
           <div class="flex items-center gap-2 mb-4">
-            <span class="text-2xl">💰</span>
+            <img src="/logoweb.png" alt="Ordénate.AI" class="w-8 h-8">
             <span class="text-xl font-bold">Ordénate<span class="text-accent">.AI</span></span>
           </div>
           <p class="text-gray-400 text-sm max-w-md">
