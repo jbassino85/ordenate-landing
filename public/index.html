@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ordénate.AI - Tu asistente financiero en WhatsApp</title>
-  <meta name="description" content="Ordena tus finanzas personales desde WhatsApp. Registra gastos, categoriza automáticamente con IA y recibe reportes mensuales.">
+  <meta name="description" content="Ordena tus finanzas desde WhatsApp. Registra gastos en segundos, define presupuestos y recibe alertas antes de pasarte.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/logoweb.png">
@@ -41,7 +41,6 @@
   <style>
     body { font-family: 'Poppins', sans-serif; }
 
-    /* Animación suave para el celular */
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-15px); }
@@ -49,7 +48,6 @@
     }
     .animate-float { animation: float 6s ease-in-out infinite; }
 
-    /* Efecto de glow sutil detrás de elementos */
     .blob {
       position: absolute;
       filter: blur(80px);
@@ -57,12 +55,10 @@
       z-index: 0;
     }
 
-    /* Glow para botones accent */
     .accent-glow {
       box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
     }
 
-    /* Gradient para hero */
     .hero-gradient {
       background: linear-gradient(135deg, #0B0F15 0%, #11141E 50%, #1A1D2D 100%);
     }
@@ -85,14 +81,13 @@
       </div>
       <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank"
          class="bg-accent hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition accent-glow">
-        Comenzar gratis
+        Empezar gratis
       </a>
     </div>
   </nav>
- 
+
   <!-- Hero -->
   <section class="hero-gradient pt-32 pb-20 px-4 relative overflow-hidden">
-    <!-- Blob decorativo -->
     <div class="blob w-96 h-96 bg-accent -top-48 -left-48 rounded-full"></div>
     <div class="blob w-72 h-72 bg-indigo-600 top-20 right-10 rounded-full"></div>
 
@@ -103,27 +98,26 @@
           <span class="text-accent">WhatsApp</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">
-          Registra gastos, categoriza automáticamente con IA y recibe reportes mensuales.
-          Sin apps, sin complicaciones.
+          Registra gastos en segundos. Define presupuestos. Recibe alertas antes de pasarte.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank"
              class="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-500 transition inline-flex items-center justify-center gap-2 accent-glow">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Comenzar ahora
-          </a>
-          <a href="#como-funciona" class="border-2 border-border text-white px-8 py-4 rounded-full font-semibold hover:bg-card transition text-center">
-            Ver cómo funciona
+            Empezar gratis en WhatsApp
           </a>
         </div>
-        <p class="text-accent text-sm mt-6 font-medium">✓ 100% gratis durante el beta</p>
+        <p class="text-gray-500 text-sm mt-4">Beta gratis · Cupos limitados</p>
+        <div class="flex flex-wrap gap-4 mt-6 text-sm text-gray-400">
+          <span class="flex items-center gap-1">🔒 Privado por diseño</span>
+          <span class="flex items-center gap-1">🗑️ Borra tus datos cuando quieras</span>
+        </div>
       </div>
 
-      <!-- Phone Mockup (WhatsApp Dark Mode) -->
+      <!-- Phone Mockup -->
       <div class="relative flex justify-center animate-float">
         <div class="bg-black rounded-[3rem] p-3 shadow-2xl max-w-[300px] border border-gray-800">
           <div class="bg-waBg rounded-[2.5rem] overflow-hidden">
-            <!-- WhatsApp Header -->
             <div class="bg-waHeader px-4 py-3 flex items-center gap-3">
               <img src="/logoweb.png" alt="Ordénate.AI" class="w-10 h-10 rounded-full">
               <div>
@@ -131,30 +125,22 @@
                 <p class="text-waGray text-xs">en línea</p>
               </div>
             </div>
-            <!-- Chat -->
             <div class="p-3 space-y-2 min-h-[350px]">
-              <!-- Usuario escribe (derecha, verde) -->
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[80%] ml-auto shadow-sm">
-                <p class="text-sm text-waText">Gasté 15000 en almuerzo</p>
+              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[85%] ml-auto shadow-sm">
+                <p class="text-sm text-waText">gasté 12.990 en supermercado</p>
                 <p class="text-[10px] text-waGray text-right">10:30</p>
               </div>
-              <!-- Bot responde (izquierda, gris) -->
               <div class="bg-waBot rounded-lg p-2 px-3 max-w-[80%] shadow-sm">
-                <p class="text-sm text-waText">✅ Registrado: Almuerzo $15.000</p>
-                <p class="text-sm text-waText">🏷️ Categoría: Alimentación</p>
+                <p class="text-sm text-waText">✅ Registrado en Supermercado</p>
                 <p class="text-[10px] text-waGray text-right">10:30</p>
               </div>
-              <!-- Usuario escribe (derecha, verde) -->
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[80%] ml-auto shadow-sm">
-                <p class="text-sm text-waText">¿Cuánto llevo este mes?</p>
+              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[85%] ml-auto shadow-sm">
+                <p class="text-sm text-waText">cómo voy este mes?</p>
                 <p class="text-[10px] text-waGray text-right">10:31</p>
               </div>
-              <!-- Bot responde (izquierda, gris) -->
-              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[85%] shadow-sm">
-                <p class="text-sm text-waText">📊 Gastos de Enero:</p>
-                <p class="text-sm text-waText">• Alimentación: $185.000</p>
-                <p class="text-sm text-waText">• Transporte: $45.000</p>
-                <p class="text-sm text-waText">• Total: $230.000</p>
+              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[90%] shadow-sm">
+                <p class="text-sm text-waText">📊 Llevas $87.000 de $150.000 en Comida.</p>
+                <p class="text-sm text-waText">Te quedan $63.000 para 12 días.</p>
                 <p class="text-[10px] text-waGray text-right">10:31</p>
               </div>
             </div>
@@ -163,287 +149,244 @@
       </div>
     </div>
   </section>
- 
-  <!-- Logos / Social Proof -->
-  <section class="py-10 bg-sec border-y border-border">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <p class="text-gray-500 text-sm mb-4">Tecnología de confianza</p>
-      <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 opacity-60">
-        <span class="text-xl md:text-2xl font-bold text-gray-500">WhatsApp</span>
-        <span class="text-xl md:text-2xl font-bold text-gray-500">Anthropic</span>
-        <span class="text-xl md:text-2xl font-bold text-gray-500">PostgreSQL</span>
+
+  <!-- Bloque de Valor -->
+  <section class="py-16 bg-sec border-y border-border">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-10">Menos fricción. Más control.</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-2xl">⚡</span>
+          </div>
+          <p class="text-gray-300">Registras en <span class="text-white font-semibold">1 mensaje</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-2xl">📊</span>
+          </div>
+          <p class="text-gray-300">Ves tu resumen <span class="text-white font-semibold">al instante</span></p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-2xl">🔔</span>
+          </div>
+          <p class="text-gray-300">Recibes alertas <span class="text-white font-semibold">antes de pasarte</span></p>
+        </div>
       </div>
     </div>
   </section>
- 
+
   <!-- Cómo Funciona -->
   <section id="como-funciona" class="py-20 px-4 bg-main">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">¿Cómo funciona?</h2>
-        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-          Tres simples pasos para tomar control de tus finanzas
-        </p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Empiezas en 1 minuto</h2>
       </div>
-
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Paso 1 -->
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">💬</span>
           </div>
           <div class="text-sm font-bold text-accent mb-2">PASO 1</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Escríbenos por WhatsApp</h3>
-          <p class="text-gray-400">
-            Agrega nuestro número y envía tu primer mensaje. Sin descargas ni registros complicados.
-          </p>
+          <h3 class="text-xl font-bold mb-3 text-white">Escríbele a Ordénate</h3>
+          <p class="text-gray-400">Sin descargas. Sin crear cuenta. Abres WhatsApp y listo.</p>
         </div>
-
-        <!-- Paso 2 -->
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <span class="text-3xl">🤖</span>
+            <span class="text-3xl">✍️</span>
           </div>
           <div class="text-sm font-bold text-accent mb-2">PASO 2</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Registra tus gastos</h3>
-          <p class="text-gray-400">
-            Escribe naturalmente: "gasté 20 lucas en uber". La IA categoriza automáticamente.
-          </p>
+          <h3 class="text-xl font-bold mb-3 text-white">Registra tus movimientos</h3>
+          <p class="text-gray-400">Gastos, ingresos, pagos fijos. En lenguaje natural.</p>
         </div>
-
-        <!-- Paso 3 -->
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <span class="text-3xl">📊</span>
+            <span class="text-3xl">🎯</span>
           </div>
           <div class="text-sm font-bold text-accent mb-2">PASO 3</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Recibe reportes</h3>
-          <p class="text-gray-400">
-            Consulta cuánto llevas gastado, por categoría, y recibe recordatorios de gastos fijos.
-          </p>
+          <h3 class="text-xl font-bold mb-3 text-white">Activa presupuestos y alertas</h3>
+          <p class="text-gray-400">Te avisamos antes de que se te escape.</p>
         </div>
       </div>
     </div>
   </section>
- 
+
   <!-- Features -->
   <section id="features" class="py-20 px-4 bg-sec">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Todo lo que necesitas</h2>
-        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-          Funcionalidades diseñadas para simplificar tu vida financiera
-        </p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Todo lo que necesitas. Nada que sobre.</h2>
       </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Feature 1 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
-          <div class="text-3xl mb-4">🏷️</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Categorización con IA</h3>
-          <p class="text-gray-400 text-sm">
-            Claude AI entiende tus mensajes y categoriza automáticamente cada gasto.
-          </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Registro en 1 línea</h3>
+          <p class="text-gray-400 text-sm">"gasté 15 lucas en uber" → registrado. Sin formatos, sin menús.</p>
         </div>
-
-        <!-- Feature 2 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">🏷️</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Categorías automáticas</h3>
+          <p class="text-gray-400 text-sm">Ordénate entiende y organiza. Tú no configuras nada.</p>
+        </div>
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">🎯</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Presupuestos</h3>
+          <p class="text-gray-400 text-sm">Define límites por categoría. Ve tu avance en tiempo real.</p>
+        </div>
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">🔔</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Alertas inteligentes</h3>
+          <p class="text-gray-400 text-sm">Te avisamos si te acercas al límite o cambió tu patrón.</p>
+        </div>
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">💡</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Tips personalizados</h3>
+          <p class="text-gray-400 text-sm">Insights de lo que realmente estás gastando. Nada genérico.</p>
+        </div>
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">📌</div>
           <h3 class="text-lg font-bold mb-2 text-white">Gastos fijos</h3>
-          <p class="text-gray-400 text-sm">
-            Registra arriendo, servicios y suscripciones. Te recordamos cada mes.
-          </p>
+          <p class="text-gray-400 text-sm">Arriendo, cuentas, suscripciones. Los registras una vez.</p>
         </div>
-
-        <!-- Feature 3 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">📈</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Reportes detallados</h3>
-          <p class="text-gray-400 text-sm">
-            Resúmenes diarios, semanales y mensuales con desglose por categoría.
-          </p>
+          <h3 class="text-lg font-bold mb-2 text-white">Reportes cuando quieras</h3>
+          <p class="text-gray-400 text-sm">Diario, semanal o mensual. Tú preguntas, Ordénate responde.</p>
         </div>
-
-        <!-- Feature 4 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
-          <div class="text-3xl mb-4">💵</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Ingresos y balance</h3>
-          <p class="text-gray-400 text-sm">
-            Registra también tus ingresos para ver tu balance real.
-          </p>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
-          <div class="text-3xl mb-4">🇨🇱</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Hecho para Chile</h3>
-          <p class="text-gray-400 text-sm">
-            Entiende pesos chilenos, "lucas", y modismos locales.
-          </p>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition">
-          <div class="text-3xl mb-4">🔒</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Privado y seguro</h3>
-          <p class="text-gray-400 text-sm">
-            Tus datos están encriptados y nunca compartimos tu información.
-          </p>
+        <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
+          <div class="text-3xl mb-4">📋</div>
+          <h3 class="text-lg font-bold mb-2 text-white">Historial completo</h3>
+          <p class="text-gray-400 text-sm">Movimientos, totales, comparaciones. Todo consultable.</p>
         </div>
       </div>
     </div>
   </section>
- 
+
+  <!-- Privacidad -->
+  <section class="py-16 px-4 bg-main">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-white">Privado por defecto</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="flex flex-col items-center p-4">
+          <span class="text-3xl mb-3">📱</span>
+          <p class="text-gray-400 text-sm">Sin app que instalar</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <span class="text-3xl mb-3">🏦</span>
+          <p class="text-gray-400 text-sm">Sin acceso a tus cuentas</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <span class="text-3xl mb-3">🗑️</span>
+          <p class="text-gray-400 text-sm">Borras todo cuando quieras</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <span class="text-3xl mb-3">🔒</span>
+          <p class="text-gray-400 text-sm">Encriptado y seguro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnología -->
+  <section class="py-10 bg-sec border-y border-border">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-500 text-sm mb-2">Infraestructura seria</p>
+      <p class="text-gray-400 text-sm">WhatsApp Business API + IA de Anthropic + base de datos encriptada</p>
+      <p class="text-gray-500 text-xs mt-1">Rápido, estable, sin sorpresas.</p>
+    </div>
+  </section>
+
   <!-- Pricing -->
   <section id="pricing" class="py-20 px-4 bg-main">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Simple y transparente</h2>
-        <p class="text-gray-400 text-lg">
-          Gratis durante el beta. Sin trucos.
-        </p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Un solo plan. Gratis en beta.</h2>
       </div>
-
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-        <!-- Free Plan -->
         <div class="border-2 border-accent rounded-2xl p-8 relative bg-card">
-          <div class="absolute -top-3 left-6 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-            BETA GRATIS
-          </div>
-          <h3 class="text-2xl font-bold mb-2 text-white">Gratis</h3>
+          <div class="absolute -top-3 left-6 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">BETA GRATIS</div>
+          <h3 class="text-2xl font-bold mb-2 text-white">Beta</h3>
           <p class="text-4xl font-extrabold mb-6 text-white">$0<span class="text-lg text-gray-500 font-normal">/mes</span></p>
           <ul class="space-y-3 mb-8">
-            <li class="flex items-center gap-2 text-sm text-gray-300">
-              <span class="text-accent">✓</span> Gastos ilimitados
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-300">
-              <span class="text-accent">✓</span> Categorización con IA
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-300">
-              <span class="text-accent">✓</span> Reportes mensuales
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-300">
-              <span class="text-accent">✓</span> Gastos fijos y recordatorios
-            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Gastos e ingresos ilimitados</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Categorías automáticas</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Presupuestos por categoría</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Alertas y tips personalizados</li>
+            <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Reportes e historial completo</li>
           </ul>
-          <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank"
-             class="block w-full bg-accent hover:bg-indigo-500 text-white py-3 rounded-full font-semibold text-center transition accent-glow">
-            Comenzar gratis
-          </a>
+          <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank" class="block w-full bg-accent hover:bg-indigo-500 text-white py-3 rounded-full font-semibold text-center transition accent-glow">Empezar gratis</a>
         </div>
-
-        <!-- Pro Plan (Coming Soon) -->
         <div class="border border-border rounded-2xl p-8 opacity-75 bg-card">
           <h3 class="text-2xl font-bold mb-2 text-white">Pro</h3>
           <p class="text-4xl font-extrabold mb-6 text-gray-500">Próximamente</p>
           <ul class="space-y-3 mb-8">
-            <li class="flex items-center gap-2 text-sm text-gray-500">
-              <span>✓</span> Todo lo gratis
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-500">
-              <span>✓</span> Presupuestos por categoría
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-500">
-              <span>✓</span> Exportar a Excel
-            </li>
-            <li class="flex items-center gap-2 text-sm text-gray-500">
-              <span>✓</span> Dashboard web
-            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Todo lo del plan Beta</li>
+            <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Reportes avanzados</li>
+            <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Exportar a Excel</li>
+            <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Múltiples cuentas</li>
+            <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Integraciones</li>
           </ul>
-          <button disabled class="block w-full bg-border text-gray-500 py-3 rounded-full font-semibold cursor-not-allowed">
-            Próximamente
-          </button>
+          <button disabled class="block w-full bg-border text-gray-500 py-3 rounded-full font-semibold cursor-not-allowed">Próximamente</button>
         </div>
       </div>
+      <p class="text-center text-gray-500 text-sm mt-6">Los usuarios beta tendrán precio preferencial de por vida.</p>
     </div>
   </section>
- 
+
   <!-- FAQ -->
   <section id="faq" class="py-20 px-4 bg-sec">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Preguntas frecuentes</h2>
       </div>
-
       <div class="space-y-4">
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border" open>
-          <summary class="font-semibold text-lg flex justify-between items-center text-white">
-            ¿Cómo empiezo a usar Ordénate.AI?
-            <span class="text-accent group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-gray-400 mt-4">
-            Solo necesitas enviarnos un mensaje de WhatsApp. No hay registro, ni app que descargar.
-            Escríbenos "Hola" y te guiaremos desde ahí.
-          </p>
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Cómo empiezo?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">Tocas el botón, se abre WhatsApp, y listo. Menos de 1 minuto.</p>
         </details>
-
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
-          <summary class="font-semibold text-lg flex justify-between items-center text-white">
-            ¿Es realmente gratis?
-            <span class="text-accent group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-gray-400 mt-4">
-            Sí, durante el período beta todas las funcionalidades son 100% gratis.
-            Cuando lancemos planes pagos, los usuarios beta tendrán beneficios especiales.
-          </p>
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Es realmente gratis?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">Sí. Durante el beta no pagas nada. Cuando lancemos Pro, tendrás beneficios.</p>
         </details>
-
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
-          <summary class="font-semibold text-lg flex justify-between items-center text-white">
-            ¿Mis datos están seguros?
-            <span class="text-accent group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-gray-400 mt-4">
-            Absolutamente. Usamos encriptación y nunca compartimos tu información financiera con terceros.
-            Puedes leer nuestra <a href="/privacidad" class="text-accent hover:underline">política de privacidad</a> para más detalles.
-          </p>
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Los presupuestos están incluidos?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">Sí. Presupuestos, alertas y tips están en el plan gratuito.</p>
         </details>
-
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
-          <summary class="font-semibold text-lg flex justify-between items-center text-white">
-            ¿Puedo eliminar mis datos?
-            <span class="text-accent group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-gray-400 mt-4">
-            Sí, en cualquier momento puedes solicitar la eliminación completa de tus datos
-            escribiéndonos "eliminar mi cuenta" por WhatsApp.
-          </p>
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Los tips son genéricos?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">No. Se calculan con tus datos reales y tus patrones de gasto.</p>
         </details>
-
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
-          <summary class="font-semibold text-lg flex justify-between items-center text-white">
-            ¿Funciona solo en Chile?
-            <span class="text-accent group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-gray-400 mt-4">
-            Por ahora estamos enfocados en Chile, pero pronto expandiremos a otros países de Latinoamérica.
-            Si estás en otro país, escríbenos igual y te avisamos cuando estemos disponibles.
-          </p>
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Puedo corregir un gasto?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">Sí. Editas o registras una corrección y queda ajustado.</p>
+        </details>
+        <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Mis datos están seguros?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">Sí. Encriptados, no compartidos, y los puedes borrar cuando quieras. <a href="/privacidad" class="text-accent hover:underline">Ver política de privacidad</a>.</p>
+        </details>
+        <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border">
+          <summary class="font-semibold text-lg flex justify-between items-center text-white">¿Necesito dar acceso a mi banco?<span class="text-accent group-open:rotate-180 transition">▼</span></summary>
+          <p class="text-gray-400 mt-4">No. Solo registras lo que tú escribes. No nos conectamos a nada.</p>
         </details>
       </div>
     </div>
   </section>
- 
+
   <!-- CTA Final -->
   <section class="py-20 px-4 bg-main relative overflow-hidden">
-    <!-- Blob decorativo -->
     <div class="blob w-96 h-96 bg-accent bottom-0 right-0 rounded-full"></div>
-
     <div class="max-w-3xl mx-auto text-center relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
-        ¿Listo para ordenar tus finanzas?
-      </h2>
-      <p class="text-lg text-gray-400 mb-8">
-        Únete a los primeros usuarios del beta y toma control de tu dinero hoy.
-      </p>
-      <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank"
-         class="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-500 transition accent-glow">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">¿Listo para ordenarte?</h2>
+      <p class="text-lg text-gray-400 mb-8">Registra tu primer gasto y activa presupuestos en menos de 2 minutos.</p>
+      <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank" class="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-500 transition accent-glow">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Comenzar por WhatsApp
+        Empezar gratis en WhatsApp
       </a>
+      <p class="text-gray-500 text-sm mt-4">Beta gratis · Cupos limitados · Sin tarjeta</p>
     </div>
   </section>
- 
+
   <!-- Footer -->
   <footer class="bg-sec text-white py-12 px-4 border-t border-border">
     <div class="max-w-6xl mx-auto">
@@ -453,12 +396,8 @@
             <img src="/logoweb.png" alt="Ordénate.AI" class="w-8 h-8">
             <span class="text-xl font-bold">Ordénate<span class="text-accent">.AI</span></span>
           </div>
-          <p class="text-gray-400 text-sm max-w-md">
-            Tu asistente financiero personal en WhatsApp.
-            Hecho con ❤️ en Chile por Bassino Digital.
-          </p>
+          <p class="text-gray-400 text-sm max-w-md">Tu asistente financiero en WhatsApp.<br>Hecho en Chile 🇨🇱 por Bassino Digital.</p>
         </div>
-
         <div>
           <h4 class="font-semibold mb-4">Links</h4>
           <ul class="space-y-2 text-sm text-gray-400">
@@ -468,7 +407,6 @@
             <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
           </ul>
         </div>
-
         <div>
           <h4 class="font-semibold mb-4">Legal</h4>
           <ul class="space-y-2 text-sm text-gray-400">
@@ -477,17 +415,12 @@
           </ul>
         </div>
       </div>
-
       <div class="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-500 text-sm">
-          © 2025 Ordénate.AI. Todos los derechos reservados.
-        </p>
-        <p class="text-gray-500 text-sm">
-          Un producto de <a href="https://bassino.digital" target="_blank" class="text-accent hover:underline">Bassino Digital</a>
-        </p>
+        <p class="text-gray-500 text-sm">© 2025 Ordénate.AI. Todos los derechos reservados.</p>
+        <p class="text-gray-500 text-sm">Un producto de <a href="https://bassino.digital" target="_blank" class="text-accent hover:underline">Bassino Digital</a></p>
       </div>
     </div>
   </footer>
- 
+
 </body>
 </html>
