@@ -22,6 +22,12 @@ ordenate-landing/
 ## 🔧 Instalación Local
 
 ```bash
+# Copia el archivo de ejemplo de variables de entorno
+cp .env.example .env
+
+# Edita .env con tu número de WhatsApp
+# WHATSAPP_NUMBER=56912345678
+
 npm install
 npm start
 ```
@@ -32,18 +38,22 @@ Abre `http://localhost:3000`
 
 1. Conectar repo a Railway
 2. Railway detecta Node.js automáticamente
-3. Generar dominio en Settings > Networking
+3. Configurar variable de entorno en Railway:
+   - Ve a **Variables** en tu servicio
+   - Agrega: `WHATSAPP_NUMBER` = `tu_numero_de_whatsapp` (ej: `56912345678`)
+4. Generar dominio en Settings > Networking
+
+## ⚙️ Variables de Entorno
+
+| Variable | Descripción | Ejemplo |
+|----------|-------------|---------|
+| `PORT` | Puerto del servidor (Railway lo configura automáticamente) | `3000` |
+| `WHATSAPP_NUMBER` | Número de WhatsApp Business en formato internacional (sin +) | `56912345678` |
 
 ## 📄 Páginas
 
 - `/` - Landing principal
 - `/privacidad` - Política de privacidad (requerida para Meta Business)
-
-## ✏️ Personalización
-
-Reemplazar en `index.html`:
-- `56XXXXXXXXX` → Tu número de WhatsApp Business
-- Links y textos según necesites
 
 ## 📄 Licencia
 
