@@ -1,0 +1,14 @@
+{
+  "name": "ordenate-landing",
+  "version": "1.0.0",
+  "description": "Landing page para Ordenate - Asistente financiero WhatsApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "Bassino Digital",
+  "license": "MIT"
+}
