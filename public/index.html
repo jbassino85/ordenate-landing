@@ -151,33 +151,75 @@
       </div>
 
       <!-- Phone Mockup -->
-      <div class="relative flex justify-center animate-float">
-        <div class="bg-black rounded-[3rem] p-3 shadow-2xl max-w-[300px] border border-gray-800">
-          <div class="bg-waBg rounded-[2.5rem] overflow-hidden">
-            <div class="bg-waHeader px-4 py-3 flex items-center gap-3">
-              <img src="/logoweb.png" alt="Ordénate.AI" class="w-10 h-10 rounded-full">
-              <div>
-                <p class="text-waText font-semibold text-sm">Ordénate.AI</p>
-                <p class="text-waGray text-xs">en línea</p>
+      <div class="relative animate-float mx-auto md:mr-0">
+        <div class="bg-[#1c1c1e] border-[6px] border-[#2c2c2e] p-2 rounded-[3rem] shadow-2xl w-[310px] h-[620px] relative">
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-36 h-7 bg-[#2c2c2e] rounded-b-2xl z-20 flex justify-center items-center space-x-2">
+            <div class="w-1.5 h-1.5 bg-[#0c0c0d] rounded-full"></div>
+            <div class="w-10 h-1.5 bg-[#0c0c0d] rounded-full"></div>
+          </div>
+
+          <div class="bg-waBg h-full w-full rounded-[2.5rem] overflow-hidden flex flex-col relative z-10 pt-8">
+
+            <div class="bg-waHeader p-3 flex items-center gap-3 border-b border-[#2a3942]">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+              </svg>
+              <div class="w-9 h-9 bg-accent rounded-full flex items-center justify-center text-sm text-white font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path d="M4.5 3.75a3 3 0 00-3 3v10.5a3 3 0 003 3h15a3 3 0 003-3V6.75a3 3 0 00-3-3h-15zm4.125 3a.75.75 0 01.75.75v9a.75.75 0 01-1.5 0v-9a.75.75 0 01.75-.75zm3.75 3a.75.75 0 01.75.75v6a.75.75 0 01-1.5 0v-6a.75.75 0 01.75-.75zm3.75 2.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0v-3.75a.75.75 0 01.75-.75z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <div class="text-waText text-sm font-semibold">Ordénate AI</div>
+                <div class="text-waGray text-xs">En línea</div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12a.75.75 0 110-1.5.75.75 0 010 1.5zM12 17.25a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
+              </svg>
+            </div>
+
+            <div class="flex-1 p-4 space-y-3 font-sans text-[13px] overflow-y-auto">
+              <div class="flex justify-center">
+                <span class="bg-waHeader text-waGray text-[10px] px-2 py-1 rounded-lg uppercase shadow-sm">Hoy</span>
+              </div>
+
+              <div class="flex justify-end">
+                <div class="bg-waUser text-waText p-2 px-3 rounded-lg rounded-tr-none max-w-[85%] shadow-sm flex items-end gap-2 leading-snug">
+                  gasté 12.990 en supermercado 🛒
+                  <span class="text-waGray text-[10px] min-w-fit flex items-end pb-0.5">10:30 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 ml-1 text-blue-400"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg></span>
+                </div>
+              </div>
+
+              <div class="flex justify-start">
+                <div class="bg-waBot text-waText p-2 px-3 rounded-lg rounded-tl-none max-w-[90%] shadow-sm leading-snug">
+                  ✅ Listo. Categorizado: <strong>Supermercado</strong>. Te quedan $63.000 en Comida.
+                  <span class="text-waGray text-[10px] block text-right mt-1">10:30</span>
+                </div>
+              </div>
+
+              <div class="flex justify-end mt-4">
+                <div class="bg-waUser text-waText p-2 px-3 rounded-lg rounded-tr-none max-w-[85%] shadow-sm flex items-end gap-2 leading-snug">
+                  cómo voy este mes? 🤔
+                  <span class="text-waGray text-[10px] min-w-fit flex items-end pb-0.5">10:31 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 ml-1 text-gray-500"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg></span>
+                </div>
               </div>
             </div>
-            <div class="p-3 space-y-2 min-h-[350px]">
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[85%] ml-auto shadow-sm">
-                <p class="text-sm text-waText">gasté 12.990 en supermercado</p>
-                <p class="text-[10px] text-waGray text-right">10:30</p>
+
+            <div class="p-2 bg-waHeader flex items-center gap-2 pb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-waGray">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+              </svg>
+              <div class="bg-[#2a3942] h-9 rounded-full flex-1 flex items-center px-4 text-waGray text-sm">
+                Mensaje
               </div>
-              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[80%] shadow-sm">
-                <p class="text-sm text-waText">✅ Registrado en Supermercado</p>
-                <p class="text-[10px] text-waGray text-right">10:30</p>
-              </div>
-              <div class="bg-waUser rounded-lg p-2 px-3 max-w-[85%] ml-auto shadow-sm">
-                <p class="text-sm text-waText">cómo voy este mes?</p>
-                <p class="text-[10px] text-waGray text-right">10:31</p>
-              </div>
-              <div class="bg-waBot rounded-lg p-2 px-3 max-w-[90%] shadow-sm">
-                <p class="text-sm text-waText">📊 Llevas $87.000 de $150.000 en Comida.</p>
-                <p class="text-sm text-waText">Te quedan $63.000 para 12 días.</p>
-                <p class="text-[10px] text-waGray text-right">10:31</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-waGray">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"></path>
+              </svg>
+              <div class="w-9 h-9 bg-accent rounded-full flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"></path>
+                </svg>
               </div>
             </div>
           </div>
