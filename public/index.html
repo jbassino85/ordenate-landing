@@ -15,7 +15,7 @@
   <!-- Google Fonts - Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style type="text/tailwindcss">
     @theme {
@@ -87,9 +87,9 @@
   <div id="qr-modal" class="modal-overlay">
     <div class="bg-card rounded-2xl p-8 max-w-sm mx-4 text-center border border-border relative">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">&times;</button>
-      <h3 class="text-xl font-bold text-white mb-4">Escanea para hablar con Ordénate.AI en tu celular</h3>
+      <h3 class="text-xl font-semibold text-white mb-4">Escanea para hablar con Ordénate.AI en tu celular</h3>
       <div class="bg-white p-4 rounded-xl inline-block mb-4">
-        <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" alt="QR Code" class="w-48 h-48">
+        <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fwa.me%2F56XXXXXXXXX%3Ftext%3DHola%2520Ordenate" alt="QR Code" class="w-48 h-48">
       </div>
       <p class="text-gray-400 text-sm">O abre WhatsApp Web y escríbenos directamente</p>
       <a href="https://wa.me/56XXXXXXXXX?text=Hola%20Ordénate.AI" target="_blank" class="text-accent hover:underline text-sm mt-2 block">Abrir en WhatsApp Web →</a>
@@ -107,7 +107,7 @@
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
         <img src="/logoweb.png" alt="Ordénate.AI" class="w-8 h-8">
-        <span class="text-xl font-bold text-white">Ordénate<span class="text-accent">.AI</span></span>
+        <span class="text-xl font-semibold text-white">Ordénate<span class="text-accent">.AI</span></span>
       </div>
       <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
         <a href="#como-funciona" class="hover:text-white transition">Cómo funciona</a>
@@ -129,7 +129,7 @@
 
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
       <div class="text-white">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
           Tus finanzas al día, sin tocar un
           <span class="text-accent">Excel</span>
         </h1>
@@ -138,7 +138,7 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <button onclick="handleCTA()"
-             class="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-500 transition inline-flex items-center justify-center gap-2 accent-glow">
+             class="bg-accent text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-500 transition inline-flex items-center justify-center gap-2 accent-glow">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Empezar gratis
           </button>
@@ -181,20 +181,20 @@
       </div>
     </div>
 
-    <!-- Bloque de Valor (debajo del mockup, font pequeño) -->
+    <!-- Bloque de Valor (debajo del mockup) -->
     <div class="max-w-4xl mx-auto mt-12 relative z-10">
-      <p class="text-sm font-semibold text-center text-gray-400 mb-6">Tan fácil que no te dará lata usarlo.</p>
-      <div class="grid grid-cols-3 gap-4 text-center text-xs text-gray-400">
+      <p class="text-base md:text-lg font-semibold text-center text-gray-300 mb-6">Tan fácil que no te dará lata usarlo.</p>
+      <div class="grid grid-cols-3 gap-6 text-center text-sm text-gray-300">
         <div class="flex flex-col items-center gap-2">
-          <span class="text-lg">⚡</span>
+          <span class="text-2xl">⚡</span>
           <span>Escribes un mensaje normal</span>
         </div>
         <div class="flex flex-col items-center gap-2">
-          <span class="text-lg">📊</span>
+          <span class="text-2xl">📊</span>
           <span>Deja de preguntarte adónde se fue tu sueldo</span>
         </div>
         <div class="flex flex-col items-center gap-2">
-          <span class="text-lg">🔔</span>
+          <span class="text-2xl">🔔</span>
           <span>Recibes alertas antes de pasarte</span>
         </div>
       </div>
@@ -205,32 +205,32 @@
   <section id="como-funciona" class="py-20 px-4 bg-sec">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Cómo funciona</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Cómo funciona</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">💬</span>
           </div>
-          <div class="text-sm font-bold text-accent mb-2">PASO 1</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Agrega el contacto</h3>
+          <div class="text-sm font-semibold text-accent mb-2">PASO 1</div>
+          <h3 class="text-xl font-semibold mb-3 text-white">Agrega el contacto</h3>
           <p class="text-gray-300">Sin descargas. Sin crear cuenta. Agregas el número y listo.</p>
         </div>
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">✍️</span>
           </div>
-          <div class="text-sm font-bold text-accent mb-2">PASO 2</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Escribe tus movimientos</h3>
+          <div class="text-sm font-semibold text-accent mb-2">PASO 2</div>
+          <h3 class="text-xl font-semibold mb-3 text-white">Escribe tus movimientos</h3>
           <p class="text-gray-300">Dile: "Me gasté 10 lucas en sushi" o "Pagué el arriendo". La IA entiende todo.</p>
         </div>
         <div class="text-center p-8 rounded-2xl hover:bg-card transition border border-border hover:border-accent/50">
           <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <span class="text-3xl">🎯</span>
           </div>
-          <div class="text-sm font-bold text-accent mb-2">PASO 3</div>
-          <h3 class="text-xl font-bold mb-3 text-white">Toma el control</h3>
-          <p class="text-gray-300">Recibe alertas antes de que se te acabe el presupuesto.</p>
+          <div class="text-sm font-semibold text-accent mb-2">PASO 3</div>
+          <h3 class="text-xl font-semibold mb-3 text-white">Toma el control</h3>
+          <p class="text-gray-300">Recibe alertas antes de que se te acabe el presupuesto y tips financieros personalizados.</p>
         </div>
       </div>
     </div>
@@ -240,27 +240,27 @@
   <section id="features" class="py-20 px-4 bg-main">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Características</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Características</h2>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">💬</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Habla normal, no como robot</h3>
+          <h3 class="text-lg font-semibold mb-2 text-white">Habla normal, no como robot</h3>
           <p class="text-gray-300 text-sm">No necesitas comandos raros. Escribe como le escribirías a un amigo.</p>
         </div>
         <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">🏷️</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Clasificación Mágica</h3>
+          <h3 class="text-lg font-semibold mb-2 text-white">Clasificación Mágica</h3>
           <p class="text-gray-300 text-sm">¿Uber? → Transporte. ¿Jumbo? → Supermercado. No pierdas tiempo categorizando.</p>
         </div>
         <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">🔔</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Tu Copiloto Financiero</h3>
+          <h3 class="text-lg font-semibold mb-2 text-white">Tu Copiloto Financiero</h3>
           <p class="text-gray-300 text-sm">Te avisamos *antes* de que te gastes la plata del arriendo, no a fin de mes.</p>
         </div>
         <div class="bg-card p-6 rounded-2xl border border-border hover:border-accent/50 transition">
           <div class="text-3xl mb-4">📊</div>
-          <h3 class="text-lg font-bold mb-2 text-white">Reportes al instante</h3>
+          <h3 class="text-lg font-semibold mb-2 text-white">Reportes al instante</h3>
           <p class="text-gray-300 text-sm">Pregunta "cómo voy?" y obtén tu resumen. Sin esperas, sin complicaciones.</p>
         </div>
       </div>
@@ -270,7 +270,7 @@
   <!-- Simple, privado y seguro -->
   <section class="py-16 px-4 bg-sec">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-white">Simple, privado y seguro</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-white">Simple, privado y seguro</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
         <div class="flex flex-col items-center p-4">
           <span class="text-3xl mb-3">📱</span>
@@ -296,13 +296,13 @@
   <section id="pricing" class="py-20 px-4 bg-main">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Precios</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Precios</h2>
       </div>
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
         <div class="border-2 border-accent rounded-2xl p-8 relative bg-card">
-          <div class="absolute -top-3 left-6 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">BETA GRATIS</div>
-          <h3 class="text-2xl font-bold mb-2 text-white">Beta</h3>
-          <p class="text-4xl font-extrabold mb-6 text-white">$0<span class="text-lg text-gray-500 font-normal">/mes</span></p>
+          <div class="absolute -top-3 left-6 bg-accent text-white text-xs font-semibold px-3 py-1 rounded-full">BETA GRATIS</div>
+          <h3 class="text-2xl font-semibold mb-2 text-white">Beta</h3>
+          <p class="text-4xl font-semibold mb-6 text-white">$0<span class="text-lg text-gray-500 font-normal">/mes</span></p>
           <ul class="space-y-3 mb-8">
             <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Gastos e ingresos ilimitados</li>
             <li class="flex items-center gap-2 text-sm text-gray-300"><span class="text-accent">✓</span> Categorías automáticas</li>
@@ -313,8 +313,8 @@
           <button onclick="handleCTA()" class="block w-full bg-accent hover:bg-indigo-500 text-white py-3 rounded-full font-semibold text-center transition accent-glow">Empezar gratis</button>
         </div>
         <div class="border border-border rounded-2xl p-8 opacity-75 bg-card">
-          <h3 class="text-2xl font-bold mb-2 text-white">Pro</h3>
-          <p class="text-4xl font-extrabold mb-6 text-gray-500">Próximamente</p>
+          <h3 class="text-2xl font-semibold mb-2 text-white">Pro</h3>
+          <p class="text-4xl font-semibold mb-6 text-gray-500">Próximamente</p>
           <ul class="space-y-3 mb-8">
             <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Todo lo del plan Beta</li>
             <li class="flex items-center gap-2 text-sm text-gray-500"><span>✓</span> Registro por Notas de Voz (Audio)</li>
@@ -334,7 +334,7 @@
   <section id="faq" class="py-20 px-4 bg-sec">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Preguntas frecuentes</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Preguntas frecuentes</h2>
       </div>
       <div class="space-y-4">
         <details class="bg-card rounded-xl p-6 cursor-pointer group border border-border" open>
@@ -373,9 +373,9 @@
   <section class="py-20 px-4 bg-main relative overflow-hidden">
     <div class="blob w-96 h-96 bg-accent bottom-0 right-0 rounded-full"></div>
     <div class="max-w-3xl mx-auto text-center relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Toma el control de tu dinero hoy.</h2>
+      <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Toma el control de tu dinero hoy.</h2>
       <p class="text-lg text-gray-300 mb-8">Entra ahora y asegura tu precio preferencial de por vida antes de que termine la Beta.</p>
-      <button onclick="handleCTA()" class="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-500 transition accent-glow">
+      <button onclick="handleCTA()" class="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-500 transition accent-glow">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Quiero ordenar mis gastos
       </button>
@@ -390,7 +390,7 @@
         <div class="md:col-span-2">
           <div class="flex items-center gap-2 mb-4">
             <img src="/logoweb.png" alt="Ordénate.AI" class="w-8 h-8">
-            <span class="text-xl font-bold">Ordénate<span class="text-accent">.AI</span></span>
+            <span class="text-xl font-semibold">Ordénate<span class="text-accent">.AI</span></span>
           </div>
           <p class="text-gray-400 text-sm max-w-md">Tu asistente financiero en WhatsApp. Usa IA para manejar tus gastos.<br>Hecho en Chile 🇨🇱 por Bassino Digital.</p>
         </div>
